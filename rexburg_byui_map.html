@@ -1,0 +1,2060 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_58955b670a6c23236b5b095b25853540 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    <h3 align="center" style="font-size:20px;"><b>Weather Map of Idaho & Utah</b></h3>
+    <title>Idaho and State Capital Weather</title>
+    
+            <div class="folium-map" id="map_58955b670a6c23236b5b095b25853540" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_58955b670a6c23236b5b095b25853540 = L.map(
+                "map_58955b670a6c23236b5b095b25853540",
+                {
+                    center: [44.0682, -114.742],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d9ddef0dcb90e2519d7421025b49907b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d9ddef0dcb90e2519d7421025b49907b.addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+            var marker_13c7dfa7befd816c1434233f9f2a5030 = L.marker(
+                [43.605000000000004, -116.202],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_d7426c841f43cbd670379400ebd3093a = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-22-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_13c7dfa7befd816c1434233f9f2a5030.setIcon(custom_icon_d7426c841f43cbd670379400ebd3093a);
+        
+    
+        var popup_0b284e8d8fefc6a8fa074d877b3cce77 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5006b0b972e49dc7f4af8dcacefa6484 = $(`<div id="html_5006b0b972e49dc7f4af8dcacefa6484" style="width: 100.0%; height: 100.0%;">Temperature: 65.61°F<br>Overcast clouds</div>`)[0];
+                popup_0b284e8d8fefc6a8fa074d877b3cce77.setContent(html_5006b0b972e49dc7f4af8dcacefa6484);
+            
+        
+
+        marker_13c7dfa7befd816c1434233f9f2a5030.bindPopup(popup_0b284e8d8fefc6a8fa074d877b3cce77)
+        ;
+
+        
+    
+    
+                marker_13c7dfa7befd816c1434233f9f2a5030.setIcon(custom_icon_d7426c841f43cbd670379400ebd3093a);
+            
+    
+            var marker_8eacdf9c8810434290f8f6168ddeb7ad = L.marker(
+                [43.6021, -116.3915],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_f82ccb7307c6da4f3fd3794302b240ac = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-01-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_8eacdf9c8810434290f8f6168ddeb7ad.setIcon(custom_icon_f82ccb7307c6da4f3fd3794302b240ac);
+        
+    
+        var popup_1dcf1e9d5e3ca5c746394dc7b06b5936 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7c43732c67961b75957b87c770e38b22 = $(`<div id="html_7c43732c67961b75957b87c770e38b22" style="width: 100.0%; height: 100.0%;">Temperature: 65.64°F<br>Clear sky</div>`)[0];
+                popup_1dcf1e9d5e3ca5c746394dc7b06b5936.setContent(html_7c43732c67961b75957b87c770e38b22);
+            
+        
+
+        marker_8eacdf9c8810434290f8f6168ddeb7ad.bindPopup(popup_1dcf1e9d5e3ca5c746394dc7b06b5936)
+        ;
+
+        
+    
+    
+                marker_8eacdf9c8810434290f8f6168ddeb7ad.setIcon(custom_icon_f82ccb7307c6da4f3fd3794302b240ac);
+            
+    
+            var marker_f8bfaf0b84dcf525762f44176fef6ce3 = L.marker(
+                [43.5507, -116.5635],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_87724fcd892db1dd0c315f0bae6144aa = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-01-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_f8bfaf0b84dcf525762f44176fef6ce3.setIcon(custom_icon_87724fcd892db1dd0c315f0bae6144aa);
+        
+    
+        var popup_6cc3e1b9b6cd935a20c59ff99633717e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cbf6a5dadda45c02ccc942e1b73e27b2 = $(`<div id="html_cbf6a5dadda45c02ccc942e1b73e27b2" style="width: 100.0%; height: 100.0%;">Temperature: 66.2°F<br>Clear sky</div>`)[0];
+                popup_6cc3e1b9b6cd935a20c59ff99633717e.setContent(html_cbf6a5dadda45c02ccc942e1b73e27b2);
+            
+        
+
+        marker_f8bfaf0b84dcf525762f44176fef6ce3.bindPopup(popup_6cc3e1b9b6cd935a20c59ff99633717e)
+        ;
+
+        
+    
+    
+                marker_f8bfaf0b84dcf525762f44176fef6ce3.setIcon(custom_icon_87724fcd892db1dd0c315f0bae6144aa);
+            
+    
+            var marker_fbad39e1b86e808049867642f4ca1196 = L.marker(
+                [43.481700000000004, -112.0337],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_194783592d66de53be6c2367c2ca0a6d = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-22-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_fbad39e1b86e808049867642f4ca1196.setIcon(custom_icon_194783592d66de53be6c2367c2ca0a6d);
+        
+    
+        var popup_794f0b0d601524239a2f5fbc6e765de7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f8a0eb80b971f5b3e08898ab6d9bc78 = $(`<div id="html_0f8a0eb80b971f5b3e08898ab6d9bc78" style="width: 100.0%; height: 100.0%;">Temperature: 58.93°F<br>Broken clouds</div>`)[0];
+                popup_794f0b0d601524239a2f5fbc6e765de7.setContent(html_0f8a0eb80b971f5b3e08898ab6d9bc78);
+            
+        
+
+        marker_fbad39e1b86e808049867642f4ca1196.bindPopup(popup_794f0b0d601524239a2f5fbc6e765de7)
+        ;
+
+        
+    
+    
+                marker_fbad39e1b86e808049867642f4ca1196.setIcon(custom_icon_194783592d66de53be6c2367c2ca0a6d);
+            
+    
+            var marker_570e614b2b7d9fd5a3556b01fcef99f3 = L.marker(
+                [42.8613, -112.4455],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_c8dd1e876d3792f82313476f67b4de73 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-22-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_570e614b2b7d9fd5a3556b01fcef99f3.setIcon(custom_icon_c8dd1e876d3792f82313476f67b4de73);
+        
+    
+        var popup_2a4739d454d44c0434b32f7323d92597 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7079ea92c6a8bfa5d2b877a36b630ee8 = $(`<div id="html_7079ea92c6a8bfa5d2b877a36b630ee8" style="width: 100.0%; height: 100.0%;">Temperature: 60.37°F<br>Overcast clouds</div>`)[0];
+                popup_2a4739d454d44c0434b32f7323d92597.setContent(html_7079ea92c6a8bfa5d2b877a36b630ee8);
+            
+        
+
+        marker_570e614b2b7d9fd5a3556b01fcef99f3.bindPopup(popup_2a4739d454d44c0434b32f7323d92597)
+        ;
+
+        
+    
+    
+                marker_570e614b2b7d9fd5a3556b01fcef99f3.setIcon(custom_icon_c8dd1e876d3792f82313476f67b4de73);
+            
+    
+            var marker_b1a802a8013c99108692e676c8681a39 = L.marker(
+                [43.6529, -116.6874],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_091cc574af926accb841c6a535e36e8b = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-01-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_b1a802a8013c99108692e676c8681a39.setIcon(custom_icon_091cc574af926accb841c6a535e36e8b);
+        
+    
+        var popup_40756ec314455888649a9e66dc05721e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b4559d60fc726616cfd6f3e3f3f6a63 = $(`<div id="html_0b4559d60fc726616cfd6f3e3f3f6a63" style="width: 100.0%; height: 100.0%;">Temperature: 67.05°F<br>Clear sky</div>`)[0];
+                popup_40756ec314455888649a9e66dc05721e.setContent(html_0b4559d60fc726616cfd6f3e3f3f6a63);
+            
+        
+
+        marker_b1a802a8013c99108692e676c8681a39.bindPopup(popup_40756ec314455888649a9e66dc05721e)
+        ;
+
+        
+    
+    
+                marker_b1a802a8013c99108692e676c8681a39.setIcon(custom_icon_091cc574af926accb841c6a535e36e8b);
+            
+    
+            var marker_a59f71b9796c5eb4b822d303d9ebb8f7 = L.marker(
+                [47.6677, -116.7805],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_8452bfa9c3c6cbabb26d939f3c103cf3 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-22-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_a59f71b9796c5eb4b822d303d9ebb8f7.setIcon(custom_icon_8452bfa9c3c6cbabb26d939f3c103cf3);
+        
+    
+        var popup_a28eb58bfb75044b77dad5981ba45ea9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c654fee27e2dd821c9313f8f654a5e73 = $(`<div id="html_c654fee27e2dd821c9313f8f654a5e73" style="width: 100.0%; height: 100.0%;">Temperature: 56.12°F<br>Overcast clouds</div>`)[0];
+                popup_a28eb58bfb75044b77dad5981ba45ea9.setContent(html_c654fee27e2dd821c9313f8f654a5e73);
+            
+        
+
+        marker_a59f71b9796c5eb4b822d303d9ebb8f7.bindPopup(popup_a28eb58bfb75044b77dad5981ba45ea9)
+        ;
+
+        
+    
+    
+                marker_a59f71b9796c5eb4b822d303d9ebb8f7.setIcon(custom_icon_8452bfa9c3c6cbabb26d939f3c103cf3);
+            
+    
+            var marker_af444d503a7f699c779136eea1f09fee = L.marker(
+                [42.552800000000005, -114.4609],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_b3dd49faed0250e79ae0ead1e1e451d0 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-02-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_af444d503a7f699c779136eea1f09fee.setIcon(custom_icon_b3dd49faed0250e79ae0ead1e1e451d0);
+        
+    
+        var popup_f32e847bf7c9deb1e466e963322be665 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a820787a4858165fbbd58f950af9700a = $(`<div id="html_a820787a4858165fbbd58f950af9700a" style="width: 100.0%; height: 100.0%;">Temperature: 63.03°F<br>Few clouds</div>`)[0];
+                popup_f32e847bf7c9deb1e466e963322be665.setContent(html_a820787a4858165fbbd58f950af9700a);
+            
+        
+
+        marker_af444d503a7f699c779136eea1f09fee.bindPopup(popup_f32e847bf7c9deb1e466e963322be665)
+        ;
+
+        
+    
+    
+                marker_af444d503a7f699c779136eea1f09fee.setIcon(custom_icon_b3dd49faed0250e79ae0ead1e1e451d0);
+            
+    
+            var marker_7a710cb67900c12432acc7d6e0a1f800 = L.marker(
+                [43.816, -111.789],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_fc7bc374ab5000bb31e1ea164deba705 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-22-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_7a710cb67900c12432acc7d6e0a1f800.setIcon(custom_icon_fc7bc374ab5000bb31e1ea164deba705);
+        
+    
+        var popup_b11dd564b55750e27bdd03c36af38d02 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d61ec9d43a425f7f12359509223e5742 = $(`<div id="html_d61ec9d43a425f7f12359509223e5742" style="width: 100.0%; height: 100.0%;">Temperature: 56.7°F<br>Overcast clouds</div>`)[0];
+                popup_b11dd564b55750e27bdd03c36af38d02.setContent(html_d61ec9d43a425f7f12359509223e5742);
+            
+        
+
+        marker_7a710cb67900c12432acc7d6e0a1f800.bindPopup(popup_b11dd564b55750e27bdd03c36af38d02)
+        ;
+
+        
+    
+    
+                marker_7a710cb67900c12432acc7d6e0a1f800.setIcon(custom_icon_fc7bc374ab5000bb31e1ea164deba705);
+            
+    
+            var marker_8a220cdfe9f0cb6a2e53d7ddb6fbeedd = L.marker(
+                [32.3677, -86.3006],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_3f815870c7c77d1cfef520eb4da51ac1 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-32-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_8a220cdfe9f0cb6a2e53d7ddb6fbeedd.setIcon(custom_icon_3f815870c7c77d1cfef520eb4da51ac1);
+        
+    
+        var popup_030a3d15e6a826c8b6bbc10d76bf328f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b070aa1b757ec65bcceb9a3f42f9846 = $(`<div id="html_5b070aa1b757ec65bcceb9a3f42f9846" style="width: 100.0%; height: 100.0%;">Temperature: 64.98°F<br>Light intensity drizzle</div>`)[0];
+                popup_030a3d15e6a826c8b6bbc10d76bf328f.setContent(html_5b070aa1b757ec65bcceb9a3f42f9846);
+            
+        
+
+        marker_8a220cdfe9f0cb6a2e53d7ddb6fbeedd.bindPopup(popup_030a3d15e6a826c8b6bbc10d76bf328f)
+        ;
+
+        
+    
+    
+                marker_8a220cdfe9f0cb6a2e53d7ddb6fbeedd.setIcon(custom_icon_3f815870c7c77d1cfef520eb4da51ac1);
+            
+    
+            var marker_1db6d5af807239d821c8d025afeef045 = L.marker(
+                [58.291900000000005, -134.4197],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_61f622506f606df61075172622bea7dc = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-32-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_1db6d5af807239d821c8d025afeef045.setIcon(custom_icon_61f622506f606df61075172622bea7dc);
+        
+    
+        var popup_7997025e226e30ec44b3cf5e3239cf5b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92f05391bcd4e56c46697be2bb2401f0 = $(`<div id="html_92f05391bcd4e56c46697be2bb2401f0" style="width: 100.0%; height: 100.0%;">Temperature: 38.1°F<br>Light rain</div>`)[0];
+                popup_7997025e226e30ec44b3cf5e3239cf5b.setContent(html_92f05391bcd4e56c46697be2bb2401f0);
+            
+        
+
+        marker_1db6d5af807239d821c8d025afeef045.bindPopup(popup_7997025e226e30ec44b3cf5e3239cf5b)
+        ;
+
+        
+    
+    
+                marker_1db6d5af807239d821c8d025afeef045.setIcon(custom_icon_61f622506f606df61075172622bea7dc);
+            
+    
+            var marker_4a1153617e74007dc1e59f5695be8a23 = L.marker(
+                [33.4384, -112.074],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_981d83deea9a25a24566b5761262fae1 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-01-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_4a1153617e74007dc1e59f5695be8a23.setIcon(custom_icon_981d83deea9a25a24566b5761262fae1);
+        
+    
+        var popup_e942f5c72f5633b217f40b5ce19d1020 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ffbe3fe5e7f13d611e2ff02a5ad35ad = $(`<div id="html_5ffbe3fe5e7f13d611e2ff02a5ad35ad" style="width: 100.0%; height: 100.0%;">Temperature: 85.69°F<br>Clear sky</div>`)[0];
+                popup_e942f5c72f5633b217f40b5ce19d1020.setContent(html_5ffbe3fe5e7f13d611e2ff02a5ad35ad);
+            
+        
+
+        marker_4a1153617e74007dc1e59f5695be8a23.bindPopup(popup_e942f5c72f5633b217f40b5ce19d1020)
+        ;
+
+        
+    
+    
+                marker_4a1153617e74007dc1e59f5695be8a23.setIcon(custom_icon_981d83deea9a25a24566b5761262fae1);
+            
+    
+            var marker_6f6f4a67db71ccc4240c9a54f5edf190 = L.marker(
+                [34.7365, -92.2896],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_0d2bab48c50514887aaefb8d8ed26086 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-01-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_6f6f4a67db71ccc4240c9a54f5edf190.setIcon(custom_icon_0d2bab48c50514887aaefb8d8ed26086);
+        
+    
+        var popup_959f98b8e3ce5b02af979673390140ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c7891100e337b104b66144faa1089e5f = $(`<div id="html_c7891100e337b104b66144faa1089e5f" style="width: 100.0%; height: 100.0%;">Temperature: 75.25°F<br>Clear sky</div>`)[0];
+                popup_959f98b8e3ce5b02af979673390140ea.setContent(html_c7891100e337b104b66144faa1089e5f);
+            
+        
+
+        marker_6f6f4a67db71ccc4240c9a54f5edf190.bindPopup(popup_959f98b8e3ce5b02af979673390140ea)
+        ;
+
+        
+    
+    
+                marker_6f6f4a67db71ccc4240c9a54f5edf190.setIcon(custom_icon_0d2bab48c50514887aaefb8d8ed26086);
+            
+    
+            var marker_aa40684a653131c8b1ff54ab2f9b26b6 = L.marker(
+                [38.571600000000004, -121.4944],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_99bfcf8af02bdade1d75b858eecd2a09 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-01-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_aa40684a653131c8b1ff54ab2f9b26b6.setIcon(custom_icon_99bfcf8af02bdade1d75b858eecd2a09);
+        
+    
+        var popup_5e070ca3f42fd781f8a2a49c3c9c4ac9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad04aa0bbe3cffd29aa8414031f4dfd2 = $(`<div id="html_ad04aa0bbe3cffd29aa8414031f4dfd2" style="width: 100.0%; height: 100.0%;">Temperature: 77.13°F<br>Clear sky</div>`)[0];
+                popup_5e070ca3f42fd781f8a2a49c3c9c4ac9.setContent(html_ad04aa0bbe3cffd29aa8414031f4dfd2);
+            
+        
+
+        marker_aa40684a653131c8b1ff54ab2f9b26b6.bindPopup(popup_5e070ca3f42fd781f8a2a49c3c9c4ac9)
+        ;
+
+        
+    
+    
+                marker_aa40684a653131c8b1ff54ab2f9b26b6.setIcon(custom_icon_99bfcf8af02bdade1d75b858eecd2a09);
+            
+    
+            var marker_207d3ce60a72a923a21efa66854cf156 = L.marker(
+                [39.7292, -104.9903],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_41cc813534625a6c31c5096ee102b5f0 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-02-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_207d3ce60a72a923a21efa66854cf156.setIcon(custom_icon_41cc813534625a6c31c5096ee102b5f0);
+        
+    
+        var popup_10895e9a17f8f55c9d753ea4ce81c433 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d808a79c459c1a0f22f71fc117fa0311 = $(`<div id="html_d808a79c459c1a0f22f71fc117fa0311" style="width: 100.0%; height: 100.0%;">Temperature: 66.24°F<br>Few clouds</div>`)[0];
+                popup_10895e9a17f8f55c9d753ea4ce81c433.setContent(html_d808a79c459c1a0f22f71fc117fa0311);
+            
+        
+
+        marker_207d3ce60a72a923a21efa66854cf156.bindPopup(popup_10895e9a17f8f55c9d753ea4ce81c433)
+        ;
+
+        
+    
+    
+                marker_207d3ce60a72a923a21efa66854cf156.setIcon(custom_icon_41cc813534625a6c31c5096ee102b5f0);
+            
+    
+            var marker_3f8856ee50d1911eb5f961689899520b = L.marker(
+                [41.7558, -72.6734],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_c5ff847e51ed6ef2de99d95d5cf66f8d = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-32-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_3f8856ee50d1911eb5f961689899520b.setIcon(custom_icon_c5ff847e51ed6ef2de99d95d5cf66f8d);
+        
+    
+        var popup_add5bc810b8fa17c740816f9b645ec5c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0094cbffb1d44f498cafbf7d330079fa = $(`<div id="html_0094cbffb1d44f498cafbf7d330079fa" style="width: 100.0%; height: 100.0%;">Temperature: 38.43°F<br>Light rain</div>`)[0];
+                popup_add5bc810b8fa17c740816f9b645ec5c.setContent(html_0094cbffb1d44f498cafbf7d330079fa);
+            
+        
+
+        marker_3f8856ee50d1911eb5f961689899520b.bindPopup(popup_add5bc810b8fa17c740816f9b645ec5c)
+        ;
+
+        
+    
+    
+                marker_3f8856ee50d1911eb5f961689899520b.setIcon(custom_icon_c5ff847e51ed6ef2de99d95d5cf66f8d);
+            
+    
+            var marker_e472da59ca34ba1a60826a6822e2ad91 = L.marker(
+                [39.1482, -75.5244],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_d69c57c2ccff45a3bdafe31822a2513e = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-32-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_e472da59ca34ba1a60826a6822e2ad91.setIcon(custom_icon_d69c57c2ccff45a3bdafe31822a2513e);
+        
+    
+        var popup_3458545a289a3656dddaa1aac0327ab8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5cb596c3b15e0d786db49579040c5c3f = $(`<div id="html_5cb596c3b15e0d786db49579040c5c3f" style="width: 100.0%; height: 100.0%;">Temperature: 56.21°F<br>Moderate rain</div>`)[0];
+                popup_3458545a289a3656dddaa1aac0327ab8.setContent(html_5cb596c3b15e0d786db49579040c5c3f);
+            
+        
+
+        marker_e472da59ca34ba1a60826a6822e2ad91.bindPopup(popup_3458545a289a3656dddaa1aac0327ab8)
+        ;
+
+        
+    
+    
+                marker_e472da59ca34ba1a60826a6822e2ad91.setIcon(custom_icon_d69c57c2ccff45a3bdafe31822a2513e);
+            
+    
+            var marker_91f4baee471ec2f01c093c05147a372d = L.marker(
+                [30.4283, -84.2807],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_7164c1e4edc5eb8f9562c6a1f1301107 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-22-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_91f4baee471ec2f01c093c05147a372d.setIcon(custom_icon_7164c1e4edc5eb8f9562c6a1f1301107);
+        
+    
+        var popup_99b69a0d4c7971da811bd1b118e32d54 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9f31a95b052a98505463e0998c2de90d = $(`<div id="html_9f31a95b052a98505463e0998c2de90d" style="width: 100.0%; height: 100.0%;">Temperature: 72.72°F<br>Overcast clouds</div>`)[0];
+                popup_99b69a0d4c7971da811bd1b118e32d54.setContent(html_9f31a95b052a98505463e0998c2de90d);
+            
+        
+
+        marker_91f4baee471ec2f01c093c05147a372d.bindPopup(popup_99b69a0d4c7971da811bd1b118e32d54)
+        ;
+
+        
+    
+    
+                marker_91f4baee471ec2f01c093c05147a372d.setIcon(custom_icon_7164c1e4edc5eb8f9562c6a1f1301107);
+            
+    
+            var marker_cd7c97447a78594f2fcb166657f21e72 = L.marker(
+                [33.739000000000004, -84.388],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_72ecadd2eae503d618cb5d211fa276d0 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-22-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_cd7c97447a78594f2fcb166657f21e72.setIcon(custom_icon_72ecadd2eae503d618cb5d211fa276d0);
+        
+    
+        var popup_8cdd202853d5e496d6ab211b286093ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9427ad2f4e5374e672f2a78016ae1830 = $(`<div id="html_9427ad2f4e5374e672f2a78016ae1830" style="width: 100.0%; height: 100.0%;">Temperature: 64.36°F<br>Overcast clouds</div>`)[0];
+                popup_8cdd202853d5e496d6ab211b286093ab.setContent(html_9427ad2f4e5374e672f2a78016ae1830);
+            
+        
+
+        marker_cd7c97447a78594f2fcb166657f21e72.bindPopup(popup_8cdd202853d5e496d6ab211b286093ab)
+        ;
+
+        
+    
+    
+                marker_cd7c97447a78594f2fcb166657f21e72.setIcon(custom_icon_72ecadd2eae503d618cb5d211fa276d0);
+            
+    
+            var marker_00b6c75e1dd94a5dbc759f457e043cec = L.marker(
+                [21.296899999999997, -157.8583],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_59590230e51107b01964e994f446707c = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-01-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_00b6c75e1dd94a5dbc759f457e043cec.setIcon(custom_icon_59590230e51107b01964e994f446707c);
+        
+    
+        var popup_b9edf33f6215debaceea39302075a915 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_916c1a4347f3bb064a35f63bcb352040 = $(`<div id="html_916c1a4347f3bb064a35f63bcb352040" style="width: 100.0%; height: 100.0%;">Temperature: 79.95°F<br>Clear sky</div>`)[0];
+                popup_b9edf33f6215debaceea39302075a915.setContent(html_916c1a4347f3bb064a35f63bcb352040);
+            
+        
+
+        marker_00b6c75e1dd94a5dbc759f457e043cec.bindPopup(popup_b9edf33f6215debaceea39302075a915)
+        ;
+
+        
+    
+    
+                marker_00b6c75e1dd94a5dbc759f457e043cec.setIcon(custom_icon_59590230e51107b01964e994f446707c);
+            
+    
+            var marker_9645e2a1cd510bf2fee3f1e9aa740ac9 = L.marker(
+                [41.5768, -93.625],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_3759c367ac991882457e64f6def004f6 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-02-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_9645e2a1cd510bf2fee3f1e9aa740ac9.setIcon(custom_icon_3759c367ac991882457e64f6def004f6);
+        
+    
+        var popup_411f3f88a5befb38cbd686d5093609ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e85837985773bcbe11ee1c74fa91f71f = $(`<div id="html_e85837985773bcbe11ee1c74fa91f71f" style="width: 100.0%; height: 100.0%;">Temperature: 51.82°F<br>Few clouds</div>`)[0];
+                popup_411f3f88a5befb38cbd686d5093609ff.setContent(html_e85837985773bcbe11ee1c74fa91f71f);
+            
+        
+
+        marker_9645e2a1cd510bf2fee3f1e9aa740ac9.bindPopup(popup_411f3f88a5befb38cbd686d5093609ff)
+        ;
+
+        
+    
+    
+                marker_9645e2a1cd510bf2fee3f1e9aa740ac9.setIcon(custom_icon_3759c367ac991882457e64f6def004f6);
+            
+    
+            var marker_2120715988347740cb1863f13aacfec9 = L.marker(
+                [39.788000000000004, -89.6444],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_8bc678fbfa49d9f4eb65bfe9533b28d7 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-22-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_2120715988347740cb1863f13aacfec9.setIcon(custom_icon_8bc678fbfa49d9f4eb65bfe9533b28d7);
+        
+    
+        var popup_8d2354e9698a1d6bae60bb40a80fe35f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ff8b6f129e33ec17127a786bb6357796 = $(`<div id="html_ff8b6f129e33ec17127a786bb6357796" style="width: 100.0%; height: 100.0%;">Temperature: 54.95°F<br>Broken clouds</div>`)[0];
+                popup_8d2354e9698a1d6bae60bb40a80fe35f.setContent(html_ff8b6f129e33ec17127a786bb6357796);
+            
+        
+
+        marker_2120715988347740cb1863f13aacfec9.bindPopup(popup_8d2354e9698a1d6bae60bb40a80fe35f)
+        ;
+
+        
+    
+    
+                marker_2120715988347740cb1863f13aacfec9.setIcon(custom_icon_8bc678fbfa49d9f4eb65bfe9533b28d7);
+            
+    
+            var marker_c787073db120724f1420befcab1690b2 = L.marker(
+                [39.7584, -86.1581],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_d3cbeb03ea41ec866129d986d9ed6d94 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-02-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_c787073db120724f1420befcab1690b2.setIcon(custom_icon_d3cbeb03ea41ec866129d986d9ed6d94);
+        
+    
+        var popup_8bcf0a8b05612fe21d8a2064d4cc081c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_61c94613bbe0f5575c800243fc8d337f = $(`<div id="html_61c94613bbe0f5575c800243fc8d337f" style="width: 100.0%; height: 100.0%;">Temperature: 53.87°F<br>Scattered clouds</div>`)[0];
+                popup_8bcf0a8b05612fe21d8a2064d4cc081c.setContent(html_61c94613bbe0f5575c800243fc8d337f);
+            
+        
+
+        marker_c787073db120724f1420befcab1690b2.bindPopup(popup_8bcf0a8b05612fe21d8a2064d4cc081c)
+        ;
+
+        
+    
+    
+                marker_c787073db120724f1420befcab1690b2.setIcon(custom_icon_d3cbeb03ea41ec866129d986d9ed6d94);
+            
+    
+            var marker_888347e3490b084f5428fc91a7ca2065 = L.marker(
+                [39.0373, -95.6752],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_16f8fadd5fa3b971ad3fdee59c8bc67e = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-22-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_888347e3490b084f5428fc91a7ca2065.setIcon(custom_icon_16f8fadd5fa3b971ad3fdee59c8bc67e);
+        
+    
+        var popup_cfaad75a8145ef8613a4df86b3d91671 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3275a4d59611ed69d2db7ea74bbe0af7 = $(`<div id="html_3275a4d59611ed69d2db7ea74bbe0af7" style="width: 100.0%; height: 100.0%;">Temperature: 62.1°F<br>Overcast clouds</div>`)[0];
+                popup_cfaad75a8145ef8613a4df86b3d91671.setContent(html_3275a4d59611ed69d2db7ea74bbe0af7);
+            
+        
+
+        marker_888347e3490b084f5428fc91a7ca2065.bindPopup(popup_cfaad75a8145ef8613a4df86b3d91671)
+        ;
+
+        
+    
+    
+                marker_888347e3490b084f5428fc91a7ca2065.setIcon(custom_icon_16f8fadd5fa3b971ad3fdee59c8bc67e);
+            
+    
+            var marker_34b170dfbaccc9f5f7cdb47a02b90f7d = L.marker(
+                [38.1909, -84.8733],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_7d68f338592b108029c8312a813f7607 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-01-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_34b170dfbaccc9f5f7cdb47a02b90f7d.setIcon(custom_icon_7d68f338592b108029c8312a813f7607);
+        
+    
+        var popup_78adbcefd4672876e384055c6b786676 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_66f4609f984a51b258b9ec6baa39b199 = $(`<div id="html_66f4609f984a51b258b9ec6baa39b199" style="width: 100.0%; height: 100.0%;">Temperature: 58.55°F<br>Clear sky</div>`)[0];
+                popup_78adbcefd4672876e384055c6b786676.setContent(html_66f4609f984a51b258b9ec6baa39b199);
+            
+        
+
+        marker_34b170dfbaccc9f5f7cdb47a02b90f7d.bindPopup(popup_78adbcefd4672876e384055c6b786676)
+        ;
+
+        
+    
+    
+                marker_34b170dfbaccc9f5f7cdb47a02b90f7d.setIcon(custom_icon_7d68f338592b108029c8312a813f7607);
+            
+    
+            var marker_17e05c55512fd6fe294774116d9e9d8c = L.marker(
+                [30.441499999999998, -91.1871],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_63a495a1f22c88e398f22cdeb516fc96 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-22-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_17e05c55512fd6fe294774116d9e9d8c.setIcon(custom_icon_63a495a1f22c88e398f22cdeb516fc96);
+        
+    
+        var popup_8ce6ef225cd644dc1e7cc2ea6d0a8bd4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d8dee68a15181ad04ad62eca80457694 = $(`<div id="html_d8dee68a15181ad04ad62eca80457694" style="width: 100.0%; height: 100.0%;">Temperature: 74.62°F<br>Broken clouds</div>`)[0];
+                popup_8ce6ef225cd644dc1e7cc2ea6d0a8bd4.setContent(html_d8dee68a15181ad04ad62eca80457694);
+            
+        
+
+        marker_17e05c55512fd6fe294774116d9e9d8c.bindPopup(popup_8ce6ef225cd644dc1e7cc2ea6d0a8bd4)
+        ;
+
+        
+    
+    
+                marker_17e05c55512fd6fe294774116d9e9d8c.setIcon(custom_icon_63a495a1f22c88e398f22cdeb516fc96);
+            
+    
+            var marker_8b79e2c442925b360ea9a50ba8ad3936 = L.marker(
+                [44.3006, -69.7795],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_bb1308303c31df973c7d9db48d4f0367 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-24-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_8b79e2c442925b360ea9a50ba8ad3936.setIcon(custom_icon_bb1308303c31df973c7d9db48d4f0367);
+        
+    
+        var popup_e1ba1d9e2a37feaf7578d4e360695029 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b4caca954fbaabf0bade9b99fa845e0 = $(`<div id="html_8b4caca954fbaabf0bade9b99fa845e0" style="width: 100.0%; height: 100.0%;">Temperature: 31.95°F<br>Snow</div>`)[0];
+                popup_e1ba1d9e2a37feaf7578d4e360695029.setContent(html_8b4caca954fbaabf0bade9b99fa845e0);
+            
+        
+
+        marker_8b79e2c442925b360ea9a50ba8ad3936.bindPopup(popup_e1ba1d9e2a37feaf7578d4e360695029)
+        ;
+
+        
+    
+    
+                marker_8b79e2c442925b360ea9a50ba8ad3936.setIcon(custom_icon_bb1308303c31df973c7d9db48d4f0367);
+            
+    
+            var marker_71cfd7d3da9d844d68207030ccc9440c = L.marker(
+                [38.9684, -76.4922],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_e8816ef8244dc85af8b541fd6967616a = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-32-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_71cfd7d3da9d844d68207030ccc9440c.setIcon(custom_icon_e8816ef8244dc85af8b541fd6967616a);
+        
+    
+        var popup_442d3773b609d699a4a66a11f8f2ec3e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f3b4fe9f3bda73c55ce45f06fee4fdb = $(`<div id="html_2f3b4fe9f3bda73c55ce45f06fee4fdb" style="width: 100.0%; height: 100.0%;">Temperature: 57.36°F<br>Moderate rain</div>`)[0];
+                popup_442d3773b609d699a4a66a11f8f2ec3e.setContent(html_2f3b4fe9f3bda73c55ce45f06fee4fdb);
+            
+        
+
+        marker_71cfd7d3da9d844d68207030ccc9440c.bindPopup(popup_442d3773b609d699a4a66a11f8f2ec3e)
+        ;
+
+        
+    
+    
+                marker_71cfd7d3da9d844d68207030ccc9440c.setIcon(custom_icon_e8816ef8244dc85af8b541fd6967616a);
+            
+    
+            var marker_60664cef0379dc3344ed04e7aef34812 = L.marker(
+                [42.350100000000005, -71.0589],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_6505fa05e685335e050745cfd233641f = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-32-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_60664cef0379dc3344ed04e7aef34812.setIcon(custom_icon_6505fa05e685335e050745cfd233641f);
+        
+    
+        var popup_50ea39b0a6180066dacab3f2682395a3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21221f571a4b0d83bae72a0eaee9b23a = $(`<div id="html_21221f571a4b0d83bae72a0eaee9b23a" style="width: 100.0%; height: 100.0%;">Temperature: 41.49°F<br>Moderate rain</div>`)[0];
+                popup_50ea39b0a6180066dacab3f2682395a3.setContent(html_21221f571a4b0d83bae72a0eaee9b23a);
+            
+        
+
+        marker_60664cef0379dc3344ed04e7aef34812.bindPopup(popup_50ea39b0a6180066dacab3f2682395a3)
+        ;
+
+        
+    
+    
+                marker_60664cef0379dc3344ed04e7aef34812.setIcon(custom_icon_6505fa05e685335e050745cfd233641f);
+            
+    
+            var marker_1b131a7854c5c797cf3aa88c96dc3455 = L.marker(
+                [42.722500000000004, -84.5555],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_f6f20fbe0010377c96b0d1003c8d2e53 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-22-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_1b131a7854c5c797cf3aa88c96dc3455.setIcon(custom_icon_f6f20fbe0010377c96b0d1003c8d2e53);
+        
+    
+        var popup_44e032068b53882ca2291cc892a57abf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4cbbf8b0e524833c57ab1d2b117bc159 = $(`<div id="html_4cbbf8b0e524833c57ab1d2b117bc159" style="width: 100.0%; height: 100.0%;">Temperature: 35.89°F<br>Overcast clouds</div>`)[0];
+                popup_44e032068b53882ca2291cc892a57abf.setContent(html_4cbbf8b0e524833c57ab1d2b117bc159);
+            
+        
+
+        marker_1b131a7854c5c797cf3aa88c96dc3455.bindPopup(popup_44e032068b53882ca2291cc892a57abf)
+        ;
+
+        
+    
+    
+                marker_1b131a7854c5c797cf3aa88c96dc3455.setIcon(custom_icon_f6f20fbe0010377c96b0d1003c8d2e53);
+            
+    
+            var marker_0eaacb2700abd6be318b00a96eeb5f55 = L.marker(
+                [44.9437, -93.09],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_4bdde950aaf367b24cbc4549efd1240e = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-01-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_0eaacb2700abd6be318b00a96eeb5f55.setIcon(custom_icon_4bdde950aaf367b24cbc4549efd1240e);
+        
+    
+        var popup_6613e440156f5a1244348289a85c1c0d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_afcfb13644af226db8f556a312992398 = $(`<div id="html_afcfb13644af226db8f556a312992398" style="width: 100.0%; height: 100.0%;">Temperature: 45.19°F<br>Clear sky</div>`)[0];
+                popup_6613e440156f5a1244348289a85c1c0d.setContent(html_afcfb13644af226db8f556a312992398);
+            
+        
+
+        marker_0eaacb2700abd6be318b00a96eeb5f55.bindPopup(popup_6613e440156f5a1244348289a85c1c0d)
+        ;
+
+        
+    
+    
+                marker_0eaacb2700abd6be318b00a96eeb5f55.setIcon(custom_icon_4bdde950aaf367b24cbc4549efd1240e);
+            
+    
+            var marker_792d638a5c8fb8467076b7d1737df289 = L.marker(
+                [32.2888, -90.1848],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_47d91ae9b1fa551a9f484ef78fa979ab = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-22-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_792d638a5c8fb8467076b7d1737df289.setIcon(custom_icon_47d91ae9b1fa551a9f484ef78fa979ab);
+        
+    
+        var popup_999e37947c6b28e7bce9d361113d9a43 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d12138e63ee376d6831af2b8222e259 = $(`<div id="html_2d12138e63ee376d6831af2b8222e259" style="width: 100.0%; height: 100.0%;">Temperature: 74.79°F<br>Overcast clouds</div>`)[0];
+                popup_999e37947c6b28e7bce9d361113d9a43.setContent(html_2d12138e63ee376d6831af2b8222e259);
+            
+        
+
+        marker_792d638a5c8fb8467076b7d1737df289.bindPopup(popup_999e37947c6b28e7bce9d361113d9a43)
+        ;
+
+        
+    
+    
+                marker_792d638a5c8fb8467076b7d1737df289.setIcon(custom_icon_47d91ae9b1fa551a9f484ef78fa979ab);
+            
+    
+            var marker_19cf9eda70ac6e0eb793ab1cc1d9bed9 = L.marker(
+                [38.566700000000004, -92.1735],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_b5a4ead573c58e034e9999200c04afd6 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-22-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_19cf9eda70ac6e0eb793ab1cc1d9bed9.setIcon(custom_icon_b5a4ead573c58e034e9999200c04afd6);
+        
+    
+        var popup_3355dad13dae50261712ee3c3569c9b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1189d1075397aecf13bb0f7aa03e43f1 = $(`<div id="html_1189d1075397aecf13bb0f7aa03e43f1" style="width: 100.0%; height: 100.0%;">Temperature: 60.03°F<br>Overcast clouds</div>`)[0];
+                popup_3355dad13dae50261712ee3c3569c9b7.setContent(html_1189d1075397aecf13bb0f7aa03e43f1);
+            
+        
+
+        marker_19cf9eda70ac6e0eb793ab1cc1d9bed9.bindPopup(popup_3355dad13dae50261712ee3c3569c9b7)
+        ;
+
+        
+    
+    
+                marker_19cf9eda70ac6e0eb793ab1cc1d9bed9.setIcon(custom_icon_b5a4ead573c58e034e9999200c04afd6);
+            
+    
+            var marker_78c0399591bfa8d18550ccdde22faf1c = L.marker(
+                [46.5784, -112.024],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_27c75dbebb51b0574c15764b0159fbee = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-22-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_78c0399591bfa8d18550ccdde22faf1c.setIcon(custom_icon_27c75dbebb51b0574c15764b0159fbee);
+        
+    
+        var popup_96401ef3f98574960d2aa1ded4036832 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d98b26f521af55c609ddd738590f865b = $(`<div id="html_d98b26f521af55c609ddd738590f865b" style="width: 100.0%; height: 100.0%;">Temperature: 52.2°F<br>Overcast clouds</div>`)[0];
+                popup_96401ef3f98574960d2aa1ded4036832.setContent(html_d98b26f521af55c609ddd738590f865b);
+            
+        
+
+        marker_78c0399591bfa8d18550ccdde22faf1c.bindPopup(popup_96401ef3f98574960d2aa1ded4036832)
+        ;
+
+        
+    
+    
+                marker_78c0399591bfa8d18550ccdde22faf1c.setIcon(custom_icon_27c75dbebb51b0574c15764b0159fbee);
+            
+    
+            var marker_7e95f0838340061e13aa2a8c3f8bb4d4 = L.marker(
+                [40.8036, -96.7026],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_cfc34c934cbc79d373e4af99334c3e33 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-22-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_7e95f0838340061e13aa2a8c3f8bb4d4.setIcon(custom_icon_cfc34c934cbc79d373e4af99334c3e33);
+        
+    
+        var popup_7ca3adf5fc99516e3e3e44dab1c08373 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5669d992b8d2de7369495d1a161fbee9 = $(`<div id="html_5669d992b8d2de7369495d1a161fbee9" style="width: 100.0%; height: 100.0%;">Temperature: 61.38°F<br>Overcast clouds</div>`)[0];
+                popup_7ca3adf5fc99516e3e3e44dab1c08373.setContent(html_5669d992b8d2de7369495d1a161fbee9);
+            
+        
+
+        marker_7e95f0838340061e13aa2a8c3f8bb4d4.bindPopup(popup_7ca3adf5fc99516e3e3e44dab1c08373)
+        ;
+
+        
+    
+    
+                marker_7e95f0838340061e13aa2a8c3f8bb4d4.setIcon(custom_icon_cfc34c934cbc79d373e4af99334c3e33);
+            
+    
+            var marker_2aaf3ca178f5d2ad5dbc9f7dbc22085e = L.marker(
+                [39.153800000000004, -119.7674],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_340c17d3da0c790d37a56e727892d095 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-01-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_2aaf3ca178f5d2ad5dbc9f7dbc22085e.setIcon(custom_icon_340c17d3da0c790d37a56e727892d095);
+        
+    
+        var popup_14fe69b58b0d70a9ecd8541048330cb8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0226e08c3ac66ac21a32089d95eff3ff = $(`<div id="html_0226e08c3ac66ac21a32089d95eff3ff" style="width: 100.0%; height: 100.0%;">Temperature: 64°F<br>Clear sky</div>`)[0];
+                popup_14fe69b58b0d70a9ecd8541048330cb8.setContent(html_0226e08c3ac66ac21a32089d95eff3ff);
+            
+        
+
+        marker_2aaf3ca178f5d2ad5dbc9f7dbc22085e.bindPopup(popup_14fe69b58b0d70a9ecd8541048330cb8)
+        ;
+
+        
+    
+    
+                marker_2aaf3ca178f5d2ad5dbc9f7dbc22085e.setIcon(custom_icon_340c17d3da0c790d37a56e727892d095);
+            
+    
+            var marker_43484a8985e0ae2a1311439f32a34645 = L.marker(
+                [43.198100000000004, -71.5376],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_be3dd8942c1448a7cdbd602bb45d0a34 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-24-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_43484a8985e0ae2a1311439f32a34645.setIcon(custom_icon_be3dd8942c1448a7cdbd602bb45d0a34);
+        
+    
+        var popup_214dc6e9e33fce07065c9c2c318dd2e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0855b86bc75f5d97c5271951708b40fc = $(`<div id="html_0855b86bc75f5d97c5271951708b40fc" style="width: 100.0%; height: 100.0%;">Temperature: 33.01°F<br>Snow</div>`)[0];
+                popup_214dc6e9e33fce07065c9c2c318dd2e2.setContent(html_0855b86bc75f5d97c5271951708b40fc);
+            
+        
+
+        marker_43484a8985e0ae2a1311439f32a34645.bindPopup(popup_214dc6e9e33fce07065c9c2c318dd2e2)
+        ;
+
+        
+    
+    
+                marker_43484a8985e0ae2a1311439f32a34645.setIcon(custom_icon_be3dd8942c1448a7cdbd602bb45d0a34);
+            
+    
+            var marker_b44a2962c125cb16f52310ca090597ef = L.marker(
+                [40.207100000000004, -74.7429],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_1bbe8364be58f94e0281699d89dce9da = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-32-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_b44a2962c125cb16f52310ca090597ef.setIcon(custom_icon_1bbe8364be58f94e0281699d89dce9da);
+        
+    
+        var popup_a832230d6e6fe2c6495389cb92191c74 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_66deec4dc0ee6c86ff697357741279eb = $(`<div id="html_66deec4dc0ee6c86ff697357741279eb" style="width: 100.0%; height: 100.0%;">Temperature: 53.55°F<br>Light rain</div>`)[0];
+                popup_a832230d6e6fe2c6495389cb92191c74.setContent(html_66deec4dc0ee6c86ff697357741279eb);
+            
+        
+
+        marker_b44a2962c125cb16f52310ca090597ef.bindPopup(popup_a832230d6e6fe2c6495389cb92191c74)
+        ;
+
+        
+    
+    
+                marker_b44a2962c125cb16f52310ca090597ef.setIcon(custom_icon_1bbe8364be58f94e0281699d89dce9da);
+            
+    
+            var marker_a687b1965c7d5e3bc2edb3a04b52244f = L.marker(
+                [35.677, -105.9378],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_4038b820eec3f7fb646b3d67495f8c2b = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-01-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_a687b1965c7d5e3bc2edb3a04b52244f.setIcon(custom_icon_4038b820eec3f7fb646b3d67495f8c2b);
+        
+    
+        var popup_c320eba756ce55b3d72b5a51228afe28 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d32b0e1e834ce59543b67a511bba9230 = $(`<div id="html_d32b0e1e834ce59543b67a511bba9230" style="width: 100.0%; height: 100.0%;">Temperature: 64.6°F<br>Clear sky</div>`)[0];
+                popup_c320eba756ce55b3d72b5a51228afe28.setContent(html_d32b0e1e834ce59543b67a511bba9230);
+            
+        
+
+        marker_a687b1965c7d5e3bc2edb3a04b52244f.bindPopup(popup_c320eba756ce55b3d72b5a51228afe28)
+        ;
+
+        
+    
+    
+                marker_a687b1965c7d5e3bc2edb3a04b52244f.setIcon(custom_icon_4038b820eec3f7fb646b3d67495f8c2b);
+            
+    
+            var marker_918e2dd75c6e0af939c24e6249bb44e4 = L.marker(
+                [42.6426, -73.7562],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_e7e887ec38d927e00be16535a9dfe030 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-22-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_918e2dd75c6e0af939c24e6249bb44e4.setIcon(custom_icon_e7e887ec38d927e00be16535a9dfe030);
+        
+    
+        var popup_9436e302b169d074ad36650d1876f7dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da588a4f8ffeb96bc63015f4fa828102 = $(`<div id="html_da588a4f8ffeb96bc63015f4fa828102" style="width: 100.0%; height: 100.0%;">Temperature: 44.06°F<br>Overcast clouds</div>`)[0];
+                popup_9436e302b169d074ad36650d1876f7dc.setContent(html_da588a4f8ffeb96bc63015f4fa828102);
+            
+        
+
+        marker_918e2dd75c6e0af939c24e6249bb44e4.bindPopup(popup_9436e302b169d074ad36650d1876f7dc)
+        ;
+
+        
+    
+    
+                marker_918e2dd75c6e0af939c24e6249bb44e4.setIcon(custom_icon_e7e887ec38d927e00be16535a9dfe030);
+            
+    
+            var marker_df5b638e0cff92b4ad39ada6d261b3b6 = L.marker(
+                [35.769600000000004, -78.6382],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_744fba6a7d3c8d9a3ac65f163ab648d1 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-22-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_df5b638e0cff92b4ad39ada6d261b3b6.setIcon(custom_icon_744fba6a7d3c8d9a3ac65f163ab648d1);
+        
+    
+        var popup_589ab9dadd4bac98d0f2783fca4933b9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_76c5aafe606bc757e02eb2017381ed51 = $(`<div id="html_76c5aafe606bc757e02eb2017381ed51" style="width: 100.0%; height: 100.0%;">Temperature: 64.78°F<br>Overcast clouds</div>`)[0];
+                popup_589ab9dadd4bac98d0f2783fca4933b9.setContent(html_76c5aafe606bc757e02eb2017381ed51);
+            
+        
+
+        marker_df5b638e0cff92b4ad39ada6d261b3b6.bindPopup(popup_589ab9dadd4bac98d0f2783fca4933b9)
+        ;
+
+        
+    
+    
+                marker_df5b638e0cff92b4ad39ada6d261b3b6.setIcon(custom_icon_744fba6a7d3c8d9a3ac65f163ab648d1);
+            
+    
+            var marker_e6c3fb7c19a0685a99d9dad265505622 = L.marker(
+                [46.798300000000005, -100.7837],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_fba4db6d6794a460d57ba369a4fe11a4 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-22-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_e6c3fb7c19a0685a99d9dad265505622.setIcon(custom_icon_fba4db6d6794a460d57ba369a4fe11a4);
+        
+    
+        var popup_907fc9fed21f032b74425605ae524d91 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bbacb0f8b060ba27ce11ce9c0a66443d = $(`<div id="html_bbacb0f8b060ba27ce11ce9c0a66443d" style="width: 100.0%; height: 100.0%;">Temperature: 47.57°F<br>Overcast clouds</div>`)[0];
+                popup_907fc9fed21f032b74425605ae524d91.setContent(html_bbacb0f8b060ba27ce11ce9c0a66443d);
+            
+        
+
+        marker_e6c3fb7c19a0685a99d9dad265505622.bindPopup(popup_907fc9fed21f032b74425605ae524d91)
+        ;
+
+        
+    
+    
+                marker_e6c3fb7c19a0685a99d9dad265505622.setIcon(custom_icon_fba4db6d6794a460d57ba369a4fe11a4);
+            
+    
+            var marker_ac45f0127a22846e82993d3780a1af71 = L.marker(
+                [39.9512, -82.9988],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_ea0d86e0910d43aac9a103068472124d = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-01-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_ac45f0127a22846e82993d3780a1af71.setIcon(custom_icon_ea0d86e0910d43aac9a103068472124d);
+        
+    
+        var popup_21be653052093368283423867dfc75ec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6dbfeb1210b59066adf09378f463e490 = $(`<div id="html_6dbfeb1210b59066adf09378f463e490" style="width: 100.0%; height: 100.0%;">Temperature: 54.84°F<br>Clear sky</div>`)[0];
+                popup_21be653052093368283423867dfc75ec.setContent(html_6dbfeb1210b59066adf09378f463e490);
+            
+        
+
+        marker_ac45f0127a22846e82993d3780a1af71.bindPopup(popup_21be653052093368283423867dfc75ec)
+        ;
+
+        
+    
+    
+                marker_ac45f0127a22846e82993d3780a1af71.setIcon(custom_icon_ea0d86e0910d43aac9a103068472124d);
+            
+    
+            var marker_26ce4b7d46839a6f514b301423da47b7 = L.marker(
+                [35.4576, -97.5164],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_a03c0addc02a709719daa8a958c5c63c = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-22-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_26ce4b7d46839a6f514b301423da47b7.setIcon(custom_icon_a03c0addc02a709719daa8a958c5c63c);
+        
+    
+        var popup_ae017c82c3677b4703173ad8c91210ed = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9a4b7529392e7839d1c850da309c32a2 = $(`<div id="html_9a4b7529392e7839d1c850da309c32a2" style="width: 100.0%; height: 100.0%;">Temperature: 74.12°F<br>Overcast clouds</div>`)[0];
+                popup_ae017c82c3677b4703173ad8c91210ed.setContent(html_9a4b7529392e7839d1c850da309c32a2);
+            
+        
+
+        marker_26ce4b7d46839a6f514b301423da47b7.bindPopup(popup_ae017c82c3677b4703173ad8c91210ed)
+        ;
+
+        
+    
+    
+                marker_26ce4b7d46839a6f514b301423da47b7.setIcon(custom_icon_a03c0addc02a709719daa8a958c5c63c);
+            
+    
+            var marker_481db9e16f363a4b64bdfbc227098fde = L.marker(
+                [44.932900000000004, -123.0351],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_89567cbfb45a0d955b70e33b90717793 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-22-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_481db9e16f363a4b64bdfbc227098fde.setIcon(custom_icon_89567cbfb45a0d955b70e33b90717793);
+        
+    
+        var popup_9463d805e134f56f77b149a1642f93c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7261ee29971ea88920cc48b46ef8343e = $(`<div id="html_7261ee29971ea88920cc48b46ef8343e" style="width: 100.0%; height: 100.0%;">Temperature: 64.83°F<br>Overcast clouds</div>`)[0];
+                popup_9463d805e134f56f77b149a1642f93c3.setContent(html_7261ee29971ea88920cc48b46ef8343e);
+            
+        
+
+        marker_481db9e16f363a4b64bdfbc227098fde.bindPopup(popup_9463d805e134f56f77b149a1642f93c3)
+        ;
+
+        
+    
+    
+                marker_481db9e16f363a4b64bdfbc227098fde.setIcon(custom_icon_89567cbfb45a0d955b70e33b90717793);
+            
+    
+            var marker_efdcd768b25bd86186f58ef2669c1abe = L.marker(
+                [40.263200000000005, -76.8867],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_10706bf35f377412ccc77661d7a719da = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-22-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_efdcd768b25bd86186f58ef2669c1abe.setIcon(custom_icon_10706bf35f377412ccc77661d7a719da);
+        
+    
+        var popup_95a2230e4240e998413f6b7d09188e85 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_855ca1cc0998975398d234749a13ed2c = $(`<div id="html_855ca1cc0998975398d234749a13ed2c" style="width: 100.0%; height: 100.0%;">Temperature: 58.14°F<br>Broken clouds</div>`)[0];
+                popup_95a2230e4240e998413f6b7d09188e85.setContent(html_855ca1cc0998975398d234749a13ed2c);
+            
+        
+
+        marker_efdcd768b25bd86186f58ef2669c1abe.bindPopup(popup_95a2230e4240e998413f6b7d09188e85)
+        ;
+
+        
+    
+    
+                marker_efdcd768b25bd86186f58ef2669c1abe.setIcon(custom_icon_10706bf35f377412ccc77661d7a719da);
+            
+    
+            var marker_f980b9eb58a526fa51f6aebd594d066b = L.marker(
+                [41.814, -71.4128],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_6bb0a508f6c0a5471f8cdf5873c3953b = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-27-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_f980b9eb58a526fa51f6aebd594d066b.setIcon(custom_icon_6bb0a508f6c0a5471f8cdf5873c3953b);
+        
+    
+        var popup_fafb3dd502c1a48164f7ad63a98a6ecb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d5aa4ab3aac393b50f458737e911e6a = $(`<div id="html_0d5aa4ab3aac393b50f458737e911e6a" style="width: 100.0%; height: 100.0%;">Temperature: 48.42°F<br>Mist</div>`)[0];
+                popup_fafb3dd502c1a48164f7ad63a98a6ecb.setContent(html_0d5aa4ab3aac393b50f458737e911e6a);
+            
+        
+
+        marker_f980b9eb58a526fa51f6aebd594d066b.bindPopup(popup_fafb3dd502c1a48164f7ad63a98a6ecb)
+        ;
+
+        
+    
+    
+                marker_f980b9eb58a526fa51f6aebd594d066b.setIcon(custom_icon_6bb0a508f6c0a5471f8cdf5873c3953b);
+            
+    
+            var marker_697ef4f2de3df9716b85b36c4426bc7a = L.marker(
+                [33.990700000000004, -81.0348],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_1438e60bf4bb2cd923307a3369d521c0 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-02-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_697ef4f2de3df9716b85b36c4426bc7a.setIcon(custom_icon_1438e60bf4bb2cd923307a3369d521c0);
+        
+    
+        var popup_11a2ffeffe7fdf0361da66049b318f91 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d9e1263d365b4185d6147eee8873c08f = $(`<div id="html_d9e1263d365b4185d6147eee8873c08f" style="width: 100.0%; height: 100.0%;">Temperature: 68.81°F<br>Scattered clouds</div>`)[0];
+                popup_11a2ffeffe7fdf0361da66049b318f91.setContent(html_d9e1263d365b4185d6147eee8873c08f);
+            
+        
+
+        marker_697ef4f2de3df9716b85b36c4426bc7a.bindPopup(popup_11a2ffeffe7fdf0361da66049b318f91)
+        ;
+
+        
+    
+    
+                marker_697ef4f2de3df9716b85b36c4426bc7a.setIcon(custom_icon_1438e60bf4bb2cd923307a3369d521c0);
+            
+    
+            var marker_4f49c0c27b78d2fed31ed85e6f5935db = L.marker(
+                [44.3583, -100.351],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_6153d29ed56b0e38b618eeb5db14019e = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-22-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_4f49c0c27b78d2fed31ed85e6f5935db.setIcon(custom_icon_6153d29ed56b0e38b618eeb5db14019e);
+        
+    
+        var popup_dfade4bb85b42d3435afc69545a493e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_04e9f8598f3a90360263c044b421149e = $(`<div id="html_04e9f8598f3a90360263c044b421149e" style="width: 100.0%; height: 100.0%;">Temperature: 52.86°F<br>Overcast clouds</div>`)[0];
+                popup_dfade4bb85b42d3435afc69545a493e7.setContent(html_04e9f8598f3a90360263c044b421149e);
+            
+        
+
+        marker_4f49c0c27b78d2fed31ed85e6f5935db.bindPopup(popup_dfade4bb85b42d3435afc69545a493e7)
+        ;
+
+        
+    
+    
+                marker_4f49c0c27b78d2fed31ed85e6f5935db.setIcon(custom_icon_6153d29ed56b0e38b618eeb5db14019e);
+            
+    
+            var marker_36c91bd462816a0c47651c3e99564ad6 = L.marker(
+                [36.1527, -86.7816],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_b8159ab54e708b2e7dd455cfc7aa3304 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-01-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_36c91bd462816a0c47651c3e99564ad6.setIcon(custom_icon_b8159ab54e708b2e7dd455cfc7aa3304);
+        
+    
+        var popup_9628684a2655ab1d34a3cd82ff22213f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a46fb174cf571cbbe82d57031723588 = $(`<div id="html_1a46fb174cf571cbbe82d57031723588" style="width: 100.0%; height: 100.0%;">Temperature: 67.14°F<br>Clear sky</div>`)[0];
+                popup_9628684a2655ab1d34a3cd82ff22213f.setContent(html_1a46fb174cf571cbbe82d57031723588);
+            
+        
+
+        marker_36c91bd462816a0c47651c3e99564ad6.bindPopup(popup_9628684a2655ab1d34a3cd82ff22213f)
+        ;
+
+        
+    
+    
+                marker_36c91bd462816a0c47651c3e99564ad6.setIcon(custom_icon_b8159ab54e708b2e7dd455cfc7aa3304);
+            
+    
+            var marker_8731bbcec1d70b218a172fc43aac0122 = L.marker(
+                [30.257199999999997, -97.7431],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_1b500ec397acaa19c20a423ca551c27f = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-01-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_8731bbcec1d70b218a172fc43aac0122.setIcon(custom_icon_1b500ec397acaa19c20a423ca551c27f);
+        
+    
+        var popup_147bfa37ca866485a8524f614de2a067 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_86611ea45f17e88097a64a205bf6c710 = $(`<div id="html_86611ea45f17e88097a64a205bf6c710" style="width: 100.0%; height: 100.0%;">Temperature: 82.62°F<br>Clear sky</div>`)[0];
+                popup_147bfa37ca866485a8524f614de2a067.setContent(html_86611ea45f17e88097a64a205bf6c710);
+            
+        
+
+        marker_8731bbcec1d70b218a172fc43aac0122.bindPopup(popup_147bfa37ca866485a8524f614de2a067)
+        ;
+
+        
+    
+    
+                marker_8731bbcec1d70b218a172fc43aac0122.setIcon(custom_icon_1b500ec397acaa19c20a423ca551c27f);
+            
+    
+            var marker_3313b14ce8f5a5facf4421081ff8b1e2 = L.marker(
+                [40.750800000000005, -111.891],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_15f041c9fd78094458a515afde57e470 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-02-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_3313b14ce8f5a5facf4421081ff8b1e2.setIcon(custom_icon_15f041c9fd78094458a515afde57e470);
+        
+    
+        var popup_0f99f7e465fa23dd5f25a1ad319b029f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7cfdac735f2359efa0087ca8e1352774 = $(`<div id="html_7cfdac735f2359efa0087ca8e1352774" style="width: 100.0%; height: 100.0%;">Temperature: 63.34°F<br>Scattered clouds</div>`)[0];
+                popup_0f99f7e465fa23dd5f25a1ad319b029f.setContent(html_7cfdac735f2359efa0087ca8e1352774);
+            
+        
+
+        marker_3313b14ce8f5a5facf4421081ff8b1e2.bindPopup(popup_0f99f7e465fa23dd5f25a1ad319b029f)
+        ;
+
+        
+    
+    
+                marker_3313b14ce8f5a5facf4421081ff8b1e2.setIcon(custom_icon_15f041c9fd78094458a515afde57e470);
+            
+    
+            var marker_4fc50c90ff59993878e0d47824ebffe5 = L.marker(
+                [44.2501, -72.5754],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_494a7dc1491b1c022694f6c037fc8862 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-24-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_4fc50c90ff59993878e0d47824ebffe5.setIcon(custom_icon_494a7dc1491b1c022694f6c037fc8862);
+        
+    
+        var popup_ee5f295378fecf72220c28a960d6613b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9de24b34bd7711aff06342dbe99a339f = $(`<div id="html_9de24b34bd7711aff06342dbe99a339f" style="width: 100.0%; height: 100.0%;">Temperature: 32.38°F<br>Light snow</div>`)[0];
+                popup_ee5f295378fecf72220c28a960d6613b.setContent(html_9de24b34bd7711aff06342dbe99a339f);
+            
+        
+
+        marker_4fc50c90ff59993878e0d47824ebffe5.bindPopup(popup_ee5f295378fecf72220c28a960d6613b)
+        ;
+
+        
+    
+    
+                marker_4fc50c90ff59993878e0d47824ebffe5.setIcon(custom_icon_494a7dc1491b1c022694f6c037fc8862);
+            
+    
+            var marker_6236cbd9818a90ce7960ce3697708969 = L.marker(
+                [37.5307, -77.436],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_2a77ca4a370984dbe285034908977b21 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-22-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_6236cbd9818a90ce7960ce3697708969.setIcon(custom_icon_2a77ca4a370984dbe285034908977b21);
+        
+    
+        var popup_4f6e9c590115c3a73e778a63d0c4076c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e3e4667db65b45faef145396eff3bfa = $(`<div id="html_5e3e4667db65b45faef145396eff3bfa" style="width: 100.0%; height: 100.0%;">Temperature: 62.92°F<br>Overcast clouds</div>`)[0];
+                popup_4f6e9c590115c3a73e778a63d0c4076c.setContent(html_5e3e4667db65b45faef145396eff3bfa);
+            
+        
+
+        marker_6236cbd9818a90ce7960ce3697708969.bindPopup(popup_4f6e9c590115c3a73e778a63d0c4076c)
+        ;
+
+        
+    
+    
+                marker_6236cbd9818a90ce7960ce3697708969.setIcon(custom_icon_2a77ca4a370984dbe285034908977b21);
+            
+    
+            var marker_cf27037d08f2c65bda0e0e89119df285 = L.marker(
+                [47.0279, -122.9007],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_1db4781511368e0520e8c33f2b33795a = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-27-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_cf27037d08f2c65bda0e0e89119df285.setIcon(custom_icon_1db4781511368e0520e8c33f2b33795a);
+        
+    
+        var popup_c0daa6d2534df7d4e1ed956349785c57 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eae7c4f6668ed21bd6dc7f25478eb58e = $(`<div id="html_eae7c4f6668ed21bd6dc7f25478eb58e" style="width: 100.0%; height: 100.0%;">Temperature: 53.35°F<br>Mist</div>`)[0];
+                popup_c0daa6d2534df7d4e1ed956349785c57.setContent(html_eae7c4f6668ed21bd6dc7f25478eb58e);
+            
+        
+
+        marker_cf27037d08f2c65bda0e0e89119df285.bindPopup(popup_c0daa6d2534df7d4e1ed956349785c57)
+        ;
+
+        
+    
+    
+                marker_cf27037d08f2c65bda0e0e89119df285.setIcon(custom_icon_1db4781511368e0520e8c33f2b33795a);
+            
+    
+            var marker_b7aeb04c132d512b073d77a3d8688cd8 = L.marker(
+                [38.339800000000004, -81.6326],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_eac4024f74c68ceb23dadd5269c9147e = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-02-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_b7aeb04c132d512b073d77a3d8688cd8.setIcon(custom_icon_eac4024f74c68ceb23dadd5269c9147e);
+        
+    
+        var popup_330e22c967ff94aab1b8d98453169f97 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e55aefab6eb6de0e2d0418616def5eef = $(`<div id="html_e55aefab6eb6de0e2d0418616def5eef" style="width: 100.0%; height: 100.0%;">Temperature: 61.27°F<br>Few clouds</div>`)[0];
+                popup_330e22c967ff94aab1b8d98453169f97.setContent(html_e55aefab6eb6de0e2d0418616def5eef);
+            
+        
+
+        marker_b7aeb04c132d512b073d77a3d8688cd8.bindPopup(popup_330e22c967ff94aab1b8d98453169f97)
+        ;
+
+        
+    
+    
+                marker_b7aeb04c132d512b073d77a3d8688cd8.setIcon(custom_icon_eac4024f74c68ceb23dadd5269c9147e);
+            
+    
+            var marker_efaf75f06ce0780dddea145a00b70995 = L.marker(
+                [43.0631, -89.4012],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_7e6923bac7d9fea39ba5d87608cdd926 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-02-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_efaf75f06ce0780dddea145a00b70995.setIcon(custom_icon_7e6923bac7d9fea39ba5d87608cdd926);
+        
+    
+        var popup_5f2bdeae211efd09ceafe130f1a5c29e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc34f19dc186dbf23f0a500d770638cf = $(`<div id="html_bc34f19dc186dbf23f0a500d770638cf" style="width: 100.0%; height: 100.0%;">Temperature: 45.12°F<br>Scattered clouds</div>`)[0];
+                popup_5f2bdeae211efd09ceafe130f1a5c29e.setContent(html_bc34f19dc186dbf23f0a500d770638cf);
+            
+        
+
+        marker_efaf75f06ce0780dddea145a00b70995.bindPopup(popup_5f2bdeae211efd09ceafe130f1a5c29e)
+        ;
+
+        
+    
+    
+                marker_efaf75f06ce0780dddea145a00b70995.setIcon(custom_icon_7e6923bac7d9fea39ba5d87608cdd926);
+            
+    
+            var marker_12b4fa6144dd1b0558c4e96077afcec4 = L.marker(
+                [41.1301, -104.8202],
+                {
+}
+            ).addTo(map_58955b670a6c23236b5b095b25853540);
+        
+    
+        var custom_icon_871bb593d3624dc8725b8eb565d427e3 = L.icon({
+  "iconUrl": "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-22-1024.png",
+  "iconSize": [75, 75],
+});
+        marker_12b4fa6144dd1b0558c4e96077afcec4.setIcon(custom_icon_871bb593d3624dc8725b8eb565d427e3);
+        
+    
+        var popup_ad79fab359e055586e3d50f4190ac429 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_93ee784979965b9fe5be1db3d50d7613 = $(`<div id="html_93ee784979965b9fe5be1db3d50d7613" style="width: 100.0%; height: 100.0%;">Temperature: 61.77°F<br>Overcast clouds</div>`)[0];
+                popup_ad79fab359e055586e3d50f4190ac429.setContent(html_93ee784979965b9fe5be1db3d50d7613);
+            
+        
+
+        marker_12b4fa6144dd1b0558c4e96077afcec4.bindPopup(popup_ad79fab359e055586e3d50f4190ac429)
+        ;
+
+        
+    
+    
+                marker_12b4fa6144dd1b0558c4e96077afcec4.setIcon(custom_icon_871bb593d3624dc8725b8eb565d427e3);
+            
+</script>
+</html>
